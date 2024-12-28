@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matematični problem v filmu Good Will Hunting</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      /* Dodaj CSS za ozadje */
+      .remark-slide-container {
+        background-image: url('will2.jpg'); /* Pot do tvoje slike ozadja */
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+layout: true
+background-color: grey
+background-image: url(ozadje5.jpg)
+background-size: contain
+background-repeat: no-repeat
+
+---
+class: center, middle
+
+# Matematični problem v filmu <br> Good Will Hunting
+Povzeto po [YouTube posnetku s kanala Numberphile](https://www.youtube.com/watch?v=iW_LkYiuTKE).
+
+
+---
+class: left, top
+## Nekaj o filmu
+- sprva mišljen fizikalni genij
+- matematika ni v ospredju filma
+- MIT profesor da "težko" nalogo študentom
+- glavni lik Will: matematični genij samouk, hišnik na MIT
+- navdih za zgodbo: [George Dantzig](https://en.wikipedia.org/wiki/George_Dantzig)
+<div class="right"><img src="goodwill.jpg" width="350"></div>
+
+---
+class: left, middle
+*Kaj rabimo vedeti, preden se lotimo problema?*
+## Grafi in drevesa
+***Graf*** je množica točk (imenovanih **vozlišča**) in črt (ki jim rečemo **povezave**) med njimi.
+<div class="right"><img src="GRAFI.jpg" width="400"></div>
+---
+count: false
+class: left, middle
+*Kaj rabimo vedeti, preden se lotimo problema?*
+## Grafi in drevesa
+***Drevesa*** so grafi **brez ciklov**.
+<div class="right"><img src="drevesa.jpg" width="400"></div>
+
+---
+## Matematični problem
+Nariši vsa homeomorfno ireduktibilna drevesa velikosti $10$.
+
+<div class="center"><img src="vprasaj.png" width="200"></div>
+
+---
+count: false
+## Matematični problem
+Nariši vsa homeomorfno ireduktibilna drevesa velikosti $10$.
+### Pravila "po domače":
+1. drevesa morajo biti *zares* različna
+
+<div class="right"><img src="homeomorfni.jpg" width="430"></div>
+
+???
+- pokaži z rokami, kaj misliš s "premikanjem" vozlišč
+- omeni kaj matematično pomeni enaka grafa (homeomorfizem med grafoma)
+
+---
+count: false
+## Matematični problem
+Nariši vsa homeomorfno ireduktibilna drevesa velikosti $10$.
+### Pravila "po domače":
+1. drevesa morajo biti *zares* različna
+2. ne dovolimo vozlišč, iz katerih gresta le dve povezavi (t.j. vozlišč kjer se "nič ne zgodi")
+<div class="right"><img src="pravilo2.jpg" width="400"></div>
+
+---
+count: false
+## Matematični problem
+Nariši vsa homeomorfno ireduktibilna drevesa velikosti $10$.
+### Pravila "po domače":
+1. drevesa morajo biti *zares* različna
+2. ne dovolimo vozlišč, iz katerih gredsta le dve povezavi (t.j. vozlišč kjer se "nič ne zgodi")
+3. želimo natanko $10$ vozlišč
+<div class="right"><img src="pravilo3.jpg" width="350"></div>
+
+---
+## Rešitev
+Vseh iskanih grafov je $10$. Tukaj jih je $5$. 
+
+**Preden klikneš na naslednjo prosojnico, ostalih $5$ grafov <br>
+poskusi najti sam/a.**
+
+<div class="right"><img src="resitev1.jpg" width="500"></div>
+
+---
+count: false
+## Rešitev
+Še ostalih $5$ iskanih grafov.
+
+<div class="center"><img src="resitev2.jpg" width="500"></div>
+
+---
+class: center, middle
+# Ni bilo tako težko, kajne? 😁
+Film je kljub temu odličen, zato priporočam njegov ogled. 😉
+
+
+
+
+
+
+
+
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+  </body>
+</html>
